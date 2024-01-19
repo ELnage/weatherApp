@@ -1,0 +1,290 @@
+:root {
+  --main-color: #1e202b;
+  --sec-color: #009ad8;
+}
+@media (min-width: 1400px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+    max-width: 1180px;
+  }
+}
+.my-nav {
+  background-color: #1e202b !important;
+}
+.my-nav a {
+  color: #fff;
+}
+.navbar-toggler {
+  background-color: var(--sec-color);
+}
+.my-nav ul a {
+  margin: 0 20px;
+  padding: 5px 25px !important;
+  transition: 0.3s;
+  border: 2px solid transparent;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+.my-nav ul a:hover,
+.my-nav ul a.active {
+  border-radius: 50px;
+  border-color: var(--sec-color);
+  color: var(--sec-color) !important;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+main {
+  min-height: 100vh;
+  background-image: url(../images/pexels-pixabay-209831.jpg);
+  background-position: center;
+  background-size: cover;
+}
+main {
+  padding-block: 50px;
+}
+main .search input {
+  width: 100%;
+  padding: 15px 20px;
+  border-radius: 50px;
+  background-color: var(--main-color);
+  color: #fff;
+  border: none;
+  outline: none;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+main .search input:focus {
+  box-shadow: 0 0 10px var(--sec-color);
+}
+main .search button:first-of-type {
+  background-color: var(--sec-color);
+  border-radius: 50px;
+  padding: 10px 30px;
+  margin-left: -95px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+main .search button:last-of-type {
+  all: unset;
+  cursor: pointer;
+  margin-left: 10px;
+  background-color: var(--main-color);
+  padding: 15px 20px;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+main .search button:last-of-type i {
+  color: var(--sec-color);
+  font-size: 22px;
+  animation: upDown infinite 1s;
+  -webkit-animation: upDown alternate infinite 1s;
+}
+@keyframes upDown {
+  0%,
+  100% {
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+    -webkit-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    -o-transform: translateY(-10px);
+  }
+}
+.today {
+  background-color: #323544;
+  color: #bfc1c8;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  transform: translateY(-40px);
+  opacity: 0.2;
+  transition: 0.6s;
+  -webkit-transform: translateY(-40px);
+  -moz-transform: translateY(-40px);
+  -ms-transform: translateY(-40px);
+  -o-transform: translateY(-40px);
+  -webkit-transition: 0.s;
+  -moz-transition: 0.s;
+  -ms-transition: 0.s;
+  -o-transition: 0.s;
+}
+.today .day-head {
+  border-radius: 10px;
+  background: #2d303d;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.today .day-body {
+  padding: 20px;
+}
+.today .day-body #city {
+  font-size: 22px;
+}
+.today .day-body .degree p {
+  color: #fff;
+  font-size: 80px;
+  font-weight: 700;
+}
+.today .day-body .degree .Celsius {
+  color: var(--sec-color);
+}
+.today .day-body .Weather-conditions .custom {
+  color: var(--sec-color);
+  font-size: 22px;
+  font-weight: 500;
+}
+.today .day-body ul {
+  list-style: none;
+  padding: 0;
+}
+.today .day-body ul li i {
+  color: var(--sec-color);
+}
+.day {
+  background-color: #323544;
+  border-radius: 10px;
+  transform: translateY(-40px);
+  opacity: 0.2;
+  transition: 1.5s;
+  -webkit-transition: 1.5s;
+  -moz-transition: 1.5s;
+  -ms-transition: 1.5s;
+  -o-transition: 1.5s;
+}
+.day .day-head p {
+  border-radius: 10px;
+  color: #bfc1c8;
+  background: #2d303d;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.day .day-body {
+  padding: 20px;
+}
+.day .day-body .max-degree {
+  color: #fff;
+  font-size: 32px;
+  font-weight: 600;
+}
+.day .day-body .min-degree {
+  color: #bfc1c8;
+  font-size: 20px;
+}
+.day .Weather-conditions {
+  color: var(--sec-color);
+  font-size: 18px;
+}
+#tomorrow {
+  background-color: #262936;
+  transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+}
+#tomorrow .day-head p {
+  background-color: #222530;
+}
+footer {
+  background-color: #262936;
+}
+footer input {
+  width: 100%;
+  padding: 15px 20px;
+  border-radius: 50px;
+  background-color: var(--main-color);
+  color: #fff;
+  border: none;
+  outline: none;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+footer button {
+  background-color: var(--sec-color);
+  border-radius: 50px;
+  padding: 10px 30px;
+  margin-left: -95px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+footer p {
+  color: #bfc1c8;
+  font-size: 15px;
+}
+footer ul {
+  list-style: none;
+  display: flex;
+}
+footer a {
+  text-decoration: none;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin: 3px;
+  background-color: var(--main-color);
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+footer a i {
+  color: var(--sec-color);
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+footer a:hover {
+  background-color: var(--sec-color);
+}
+footer a:hover i {
+  color: #fff;
+}
+.load {
+   opacity: 1;
+   transform: translateY(0);
+   -webkit-transform: translateY(0);
+   -moz-transform: translateY(0);
+   -ms-transform: translateY(0);
+   -o-transform: translateY(0);
+}
